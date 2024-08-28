@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glavna jela</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <h1>Glavna jela</h1>
+
+    <div class="food-item" data-name="Piletina" data-price="20.00" data-description="Juicy steak">
+        <button id="PiletinaButton"> <p><img src="piletina.jpg" alt="Main Course Icon"></p>Piletina</button>
+    </div>  <div class="food-item" data-name="Cevapi" data-price="20.00" data-description="Juicy steak">
+        <button id="CevapiButton"> <p><img src="cevapi.jpg" alt="Main Course Icon"></p>Ćevapi</button>
+    </div>
+    
+    <div class="food-item" data-name="Burek" data-price="20.00" data-description="Juicy steak">
+        <button id="BurekButton"> <p><img src="burek.jpg" alt="Main Course Icon"></p>Burek</button>
+
+
+     <!-- Modal Structure -->
+     <div id="itemModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+            <p id="modal-price"></p>
+            <button id="addToCartButton">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Cart -->
+    <div id="cart">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="cart-total">0.00</span></p>
+    </div>
+    <button id="viewCart">View Cart</button>
+
+    <script src="operacie.js"></script>
+
+</body>
+</html>
